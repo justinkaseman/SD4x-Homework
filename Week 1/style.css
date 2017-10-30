@@ -1,0 +1,29 @@
+.container {
+  padding-top: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#dog-banner {
+  height: 300px;
+  width: 1000px;
+  background: url(https://pre00.deviantart.net/59bb/th/pre/i/2013/219/f/f/dog_stock_329_by_jaded_night_stock-d6h1yxz.jpg) no-repeat center center;
+}
+
+.day {
+  height: 30px;
+  background-color: #909090;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.date-box {
+  height: 90px;
+  background-color: Gainsboro;
+  font-size: 16px;
+}
+
+.day, .date-box {
+  border: 1px white solid;
+}

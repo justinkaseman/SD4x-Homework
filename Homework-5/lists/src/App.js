@@ -20,19 +20,23 @@ class App extends Component {
    * as the value put into the "lists" array. It should then re-render this App component.
    */
   handleAddList(s) {
-      // Implement this function!
+    var newItems = this.state.items;
+    newItems[s] = [];
+    this.setState( { lists: this.state.lists.concat(s), items : newItems } );
   }
 
   /**
    * This function takes the state of an AddItem component as its parameter
-   * and updates the state of this App component by adding a new value to the 
+   * and updates the state of this App component by adding a new value to the
    * appropriate array in the "items" property of the state. Keep in mind that
    * the property names of "items" are the names of each list, which is mapped
-   * to an array of the items in that list. After updating the "items" part of 
+   * to an array of the items in that list. After updating the "items" part of
    * the state, this function  should then re-render this App component.
    */
-  handleAddItem(s) {
-      // Implement this function!
+  handleAddItem(s, n) {
+    var newItems = this.state.items;
+    newItems[n] = newItems[n].concat(s);
+      this.setState( { items: newItems } );
   }
 
   /**
